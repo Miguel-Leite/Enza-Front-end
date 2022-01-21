@@ -1,0 +1,111 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --green-1: rgb(0, 158, 119);
+  --green-2: rgba(0, 158, 119, 0.377);
+  --dark-1: #161616;
+  --dark-2: #202020;
+  --text: #ffffff;
+}
+
+body {
+  background: var(--dark-2) !important;
+  color: var(--text) !important;
+}
+
+.__header {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, var(--dark-1)), to(var(--dark-2)));
+  background: linear-gradient(var(--dark-1) 60%, var(--dark-2));
+  width: 100%;
+  height: 100vh;
+}
+
+.__header .navbar-brand {
+  font-weight: 700;
+}
+
+.__header > .container {
+  margin-top: 10%;
+  text-align: center;
+  color: var(--text);
+}
+
+.__header > .container img {
+  margin-bottom: 20px;
+  width: 60px;
+}
+
+.__header > .container h1 {
+  font-weight: 800;
+  font-size: 55px;
+}
+
+.__header > .container p {
+  font-size: 20px;
+  margin: 10px 0px;
+}
+
+.__box {
+  width: 100%;
+  height: auto;
+}
+
+.__box .__box-item {
+  background-color: var(--dark-1);
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 22px #181818;
+          box-shadow: 0px 3px 22px #181818;
+}
+
+.__box .__box-item i {
+  padding: 10px 15px;
+  background-color: var(--green-1);
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.__box .__box-item h3 {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.__exemple {
+  margin: 100px 0px;
+  width: 100%;
+  height: auto;
+}
+
+.__exemple h3 {
+  color: var(--green);
+  font-weight: 700;
+  font-size: 25px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.__exemple h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(70%, var(--green)));
+  background: linear-gradient(to left, transparent, var(--green) 70%);
+}
+
+.__exemple h1 {
+  width: 500px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.css.map */

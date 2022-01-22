@@ -13,12 +13,15 @@
 
     <!-- Link font ionicons -->
     <link rel="stylesheet" href="assets/lib/ionicons/css/ionicons.min.css">
+
+    <!-- Link aos -->
+    <link rel="stylesheet" href="assets/lib/aos/aos.css">
 </head>
 <body>
     
 
     <div class="__header">
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" data-aos="fade-up">
             <div class="container">
                 <a class="navbar-brand" href="#">Documentation API</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -48,16 +51,16 @@
         </nav>
         <div class="container">
             <img src="assets/img/globe.png" alt="Country State City API">
-            <h1>Country State City API</h1>
-            <p>Documentation Website</p>
-            <a href="#" class="btn btn-success col-3 mt-sm-3"> Get Started </a>
+            <h1 data-aos="fade-right">Country State City API</h1>
+            <p data-aos="fade-up">Documentation Website</p>
+            <a href="#" class="btn btn-success col-3 mt-sm-3" data-aos="fade-up"> Get Started </a>
         </div>
     </div>
 
     <main class="__box my-5">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my-md-2">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my-md-2" data-aos="fade-right">
                     <div class="__box-item">
                         <i class="ion-android-globe"></i>
                         <h3>Countries</h3>
@@ -66,7 +69,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my-md-2">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my-md-2" data-aos="fade-up">
                     <div class="__box-item">
                         <i class="ion-android-globe"></i>
                         <h3>State</h3>
@@ -75,7 +78,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my-md-2">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my-md-2" data-aos="fade-left">
                     <div class="__box-item">
                         <i class="ion-android-globe"></i>
                         <h3>Cities</h3>
@@ -91,14 +94,14 @@
     <div class="__exemple">
 
         <div class="container">
-            <h3>Exemple</h3>
+            <h3 data-aos="zoom-up">Exemple</h3>
     
-            <h1>
+            <h1 data-aos="zoom-up">
                 Quick snippets to get started with Country State City API
             </h1>
 
             <div id="accordion">
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                   <div class="card-header" id="headingOne">
                     <h5 class="mb-0">
                       <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -130,7 +133,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                   <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -161,7 +164,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                   <div class="card-header" id="headingThree">
                     <h5 class="mb-0">
                       <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -197,7 +200,7 @@
     </div>
 
     <footer>
-        <div class="container">
+        <div class="container" data-aos="slide-up">
             <div class="links">
                 <a href="#"> <i class="ion-social-github"></i></a>
                 <a href="#"><i class="ion-social-linkedin"></i></a>
@@ -212,7 +215,14 @@
     <!-- script bootstrap.min.js -->
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
 
+    <!-- script aos.js -->
+    <script src="assets/lib/aos/aos.js"></script>
+
     <!-- script main.min.js -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        AOS.init({ duration: 2000 });
+    </script>
 </body>
 </html>

@@ -14,6 +14,16 @@
     --text: #ffffff;
 }
 
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
 body {
     background: var(--dark-2) !important;
     color: var(--text) !important;
@@ -36,6 +46,7 @@ body {
         img {
             margin-bottom: 20px;
             width: 60px;
+            animation: spin infinite 20s linear;
         }
 
         h1 {

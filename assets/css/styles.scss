@@ -100,4 +100,32 @@ body {
         width: 500px;
         font-weight: 700;
     }
+
+    #accordion {
+        margin-top: 100px;
+        .card {
+            background-color: var(--dark-2);
+            border: 1px solid #ffffff0c;
+            .card-header {
+                background-color: var(--dark-1);
+                button {
+                    color: var(--green) !important;
+                    font-weight: 700;
+                    transition: filter .3s;
+                    outline: none;
+                    &:focus {
+                        box-shadow: none;
+                        text-decoration: none;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        filter: brightness(.8);
+                    }
+                }
+            }
+            pre {
+                color: #a7a7a7d2;
+            }
+        }
+    }
 }

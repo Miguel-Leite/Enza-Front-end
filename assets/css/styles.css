@@ -108,4 +108,43 @@ body {
   width: 500px;
   font-weight: 700;
 }
+
+.__exemple #accordion {
+  margin-top: 100px;
+}
+
+.__exemple #accordion .card {
+  background-color: var(--dark-2);
+  border: 1px solid #ffffff0c;
+}
+
+.__exemple #accordion .card .card-header {
+  background-color: var(--dark-1);
+}
+
+.__exemple #accordion .card .card-header button {
+  color: var(--green) !important;
+  font-weight: 700;
+  -webkit-transition: -webkit-filter .3s;
+  transition: -webkit-filter .3s;
+  transition: filter .3s;
+  transition: filter .3s, -webkit-filter .3s;
+  outline: none;
+}
+
+.__exemple #accordion .card .card-header button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+.__exemple #accordion .card .card-header button:hover {
+  text-decoration: none;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.__exemple #accordion .card pre {
+  color: #a7a7a7d2;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -42,6 +42,17 @@ body {
   color: var(--text) !important;
 }
 
+body::-webkit-scrollbar {
+  background-color: var(--dark-2) !important;
+  border-bottom: 1px solid var(--green-2) !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green) !important;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
 .__header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, var(--dark-1)), to(var(--dark-2)));
   background: linear-gradient(var(--dark-1) 60%, var(--dark-2));
@@ -101,6 +112,110 @@ body {
   font-weight: 700;
 }
 
+.try {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.try h3 {
+  color: var(--green);
+  margin-bottom: 50px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.try h3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(70%, var(--green)));
+  background: linear-gradient(to left, transparent, var(--green) 70%);
+}
+
+.try .inputTry {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.try .inputTry input[disabled] {
+  width: 250px;
+  background-color: var(--dark-1);
+  border-radius: 8px 0px 0px 8px !important;
+  border-right: transparent;
+}
+
+@media (max-width: 600px) {
+  .try .inputTry input[disabled] {
+    width: 150px;
+  }
+}
+
+.try .inputTry input[name="try"] {
+  border-radius: 0px 0px 0px 0px !important;
+}
+
+.try .inputTry input {
+  background-color: transparent;
+  border: 1px solid #ffffff0c;
+  color: var(--text);
+}
+
+.try .inputTry input:focus {
+  background-color: transparent;
+  border: 1px solid #ffffff0c;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: var(--text);
+}
+
+.try .inputTry button {
+  outline: none;
+  border-radius: 0px 8px 8px 0px !important;
+}
+
+.try h4 {
+  margin: 50px 0px;
+  color: var(--green-2);
+}
+
+.try pre {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  background-color: var(--dark-1);
+  color: var(--text);
+  padding: 20px 0px;
+  overflow-y: scroll;
+}
+
+.try pre::-webkit-scrollbar {
+  background-color: var(--dark-2) !important;
+  border-bottom: 1px solid var(--green-2) !important;
+}
+
+.try pre::-webkit-scrollbar-thumb {
+  background-color: var(--green) !important;
+  border-radius: 50px;
+  border: 2px solid white;
+}
+
 .__exemple {
   margin: 100px 0px;
   width: 100%;
@@ -129,7 +244,6 @@ body {
 }
 
 .__exemple h1 {
-  width: 500px;
   font-weight: 700;
 }
 

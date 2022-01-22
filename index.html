@@ -34,12 +34,15 @@
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Documentation <i class="ion-android-document"></i> </a>
+                            <a class="nav-link" href="#">About</a>
                         </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Documentation <i class="ion-android-document"></i> </a>
+                      </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Payground <i class="ion-android-arrow-up"></i> </a>
                         </li>
-                        <li class="nav-item ml-sm-4">
+                        <li class="nav-item ml-lg-4">
                             <a class="nav-link" href="#" style="font-size: 22px;"> <i class="ion-social-github"></i> </a>
                         </li>
                         <li class="nav-item">
@@ -59,8 +62,8 @@
 
     <main class="__box my-5">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my-md-2" data-aos="fade-right">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 my-2" data-aos="fade-right">
                     <div class="__box-item">
                         <i class="ion-android-globe"></i>
                         <h3>Countries</h3>
@@ -69,7 +72,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my-md-2" data-aos="fade-up">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 my-2" data-aos="fade-up">
                     <div class="__box-item">
                         <i class="ion-android-globe"></i>
                         <h3>State</h3>
@@ -78,7 +81,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 my-md-2" data-aos="fade-left">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 my-2" data-aos="fade-left">
                     <div class="__box-item">
                         <i class="ion-android-globe"></i>
                         <h3>Cities</h3>
@@ -91,12 +94,85 @@
         </div>
     </main>
 
+    <div class="try">
+      <div class="container">
+        <h3 data-aos="fade-right">Try it now!</h3>
+        <div class="inputTry" data-aos="fade-up">
+          <input type="text" class="form-control" value="https://domain.co/api/v2/" title="https://domain.co/api/v2/" disabled>
+          <input type="text" name="try" id="try" class="form-control" value="country/1">
+          <button class="btn btn-primary"> Submit </button>
+        </div>
+
+        <div class="container">
+          <h4 data-aos="zoom-up">Response</h4>
+
+          <pre data-aos="fade-in">
+            <code>
+              {
+                "status": 200,
+                "response": {
+                  "country": []
+                }
+              }
+              {
+                "status": 200,
+                "response": {
+                  "country": []
+                }
+              }
+              {
+                "status": 200,
+                "response": {
+                  "country": []
+                }
+              }
+              {
+                "status": 200,
+                "response": {
+                  "country": []
+                }
+              }
+              
+            </code>
+          </pre>
+        </div>
+
+      </div>
+    </div>
+
+    <main class="__box my-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 my-2" data-aos="fade-right">
+                    <div class="__box-item">
+                        <h3>What is this?</h3>
+                        <p>
+                          This is a full RESTful API linked to an extensive database detailing everything about the API main game series.
+
+We've covered everything from API to Berry Flavors.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 my-2" data-aos="fade-left">
+                    <div class="__box-item">
+                        <h3>Where do I start?</h3>
+                        <p>
+                          We have awesome documentation on how to use this API. It takes minutes to get started.
+
+This API will always be publicly available and will never require any extensive setup process to consume.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <div class="__exemple">
 
         <div class="container">
             <h3 data-aos="zoom-up">Exemple</h3>
     
-            <h1 data-aos="zoom-up">
+            <h1 data-aos="zoom-up" class="col-lg-6 col-sm-12 col-md-12 col-xs-12">
                 Quick snippets to get started with Country State City API
             </h1>
 
@@ -112,7 +188,7 @@
               
                   <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
-                      <pre>
+                      <pre class="w-100">
                         <code>
                             var headers = new Headers();
                             
@@ -200,7 +276,7 @@
     </div>
 
     <footer>
-        <div class="container" data-aos="slide-up">
+        <div class="container" data-aos="zoom-up">
             <div class="links">
                 <a href="#"> <i class="ion-social-github"></i></a>
                 <a href="#"><i class="ion-social-linkedin"></i></a>

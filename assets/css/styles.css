@@ -111,6 +111,7 @@ body {
 
 .__exemple #accordion {
   margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 .__exemple #accordion .card {
@@ -146,5 +147,57 @@ body {
 
 .__exemple #accordion .card pre {
   color: #a7a7a7d2;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  padding: 50px 0px;
+  text-align: center;
+  background: var(--dark-1);
+  border-top: 5px solid var(--green-2);
+}
+
+footer .links {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+footer .links a {
+  width: 36px;
+  height: 36px;
+  border-radius: 500%;
+  color: var(--text);
+  background-color: var(--green);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: -webkit-filter .3s;
+  transition: -webkit-filter .3s;
+  transition: filter .3s;
+  transition: filter .3s, -webkit-filter .3s;
+}
+
+footer .links a:hover {
+  text-decoration: none;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+footer p {
+  font-size: 22px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

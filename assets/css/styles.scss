@@ -103,6 +103,7 @@ body {
 
     #accordion {
         margin-top: 100px;
+        margin-bottom: 200px;
         .card {
             background-color: var(--dark-2);
             border: 1px solid #ffffff0c;
@@ -127,5 +128,40 @@ body {
                 color: #a7a7a7d2;
             }
         }
+    }
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    text-align: center;
+    background: var(--dark-1);
+    border-top: 5px solid var(--green-2);
+    .links {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        a {
+            width: 36px;
+            height: 36px;
+            border-radius: 500%;
+            color: var(--text);
+            background-color: var(--green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: filter .3s;
+            &:hover {
+                text-decoration: none;
+                filter: brightness(.8);
+            }
+        }
+
+    }
+    p{
+        font-size: 22px;
+        margin-top: 20px;
     }
 }
